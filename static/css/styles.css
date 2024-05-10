@@ -1,0 +1,426 @@
+:root {
+    --color-principal: rgb(236, 204, 204);
+    --color-secundario: #050505;
+    --color-claro: rgb(255, 255, 255);
+    --color-oscuro: rgb(0, 0, 0);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(236, 204, 204);
+    font-family: "Raleway", sans-serif;
+}
+
+
+
+.img-products {
+    margin: auto;
+    padding: 10px;
+    height: auto;
+    width: 90%;
+    border: 1px solid transparent;
+    background-color: rgb(199, 199, 230);
+    background-size: contain;
+}
+
+.banner img {
+    display: block;
+    border: 1px solid transparent;
+    width: 100%;
+    margin: auto;
+    background-size: contain;
+}
+
+/* contenido del HEADER */
+.logo {
+    display: none;
+}
+    
+
+
+
+/* banner */
+.banner {
+    border: 1px solid green;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-size: cover;
+    background-color: #050505;
+    border: 1px solid transparent;
+    position: relative;
+    z-index: 1;
+
+    
+}
+
+/* lista de menu */
+.nav-bar {
+    display: flex;
+    position: sticky;
+    bottom: 0px;
+}
+
+.list-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-width: 1px;
+    list-style: none;
+    padding: 5px;
+    margin: 0px;
+    background-color: white;
+    width: 100%;
+}
+
+/* clase para los items */
+.item-menu {
+
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid white;
+    background-color: white;
+    border: none;
+    
+    /* border-right: 2px solid palevioletred; */
+    
+    
+}
+
+/* ENLACES DE LOS ITEMS DENTRO DE LA CLASE-LISTA-DESORDENADA */
+.item-menu a {
+    background-color: white;
+    border: 1px solid transparent;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    height: 4vh;
+    font-size: 1em;
+    list-style-type: none;
+}
+
+.list-menu li a:hover {
+    background-color: rgba(119, 115, 116, 0.37);
+    /* border-right: 2px solid palevioletred; */
+    list-style: none;
+    padding: 5px;
+    
+}
+
+
+
+.list-menu > li {
+    float:left ;
+    
+}
+
+.list-menu li ul {
+    display: none;  
+    position: absolute;
+    min-width: 140px;
+    list-style-type: none;
+}
+
+.list-menu li:hover > ul {
+    display: block;
+    z-index: 10;
+}
+
+
+
+/* Se posiciona el menu abajo */
+.menu-position {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  /* fin menu */
+
+
+
+
+.anchor-menu {
+    text-decoration: none;
+    color: black;
+    border: white;
+}
+
+.cont-a-prod {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* FIN HEADER */
+
+/* div para slogan */
+
+.slogan{
+    border: 1px solid transparent;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    color: black;
+    padding: 40px;
+    background-image: radial-gradient(circle, white, pink);
+    
+}
+
+.slogan p {
+    padding: 5px;
+    font-size: 2em;
+    background: none;
+    text-align: center;
+}
+
+/* fin slogan */
+
+/* seccion PRODUCTOS */
+
+.section-prods {
+    height: auto;
+    background-color: var(--color-claro);
+    
+    border: 1px solid transparent;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Aquí se define la sombra */
+
+}
+
+.all-products {
+    background-color: var(--color-claro);
+    
+}
+
+.product {
+    background-color: rgb(198, 187, 209);
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 95%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Aquí se define la sombra */
+}
+
+.title-2 {
+    color: black;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-weight: 500;
+    background-color: rgb(233, 217, 220);
+}
+
+.img-products {
+    margin: auto;
+    padding: 10px;
+    height: auto;
+    width: 90%;
+    border: 1px solid transparent;
+    background-color: rgb(199, 199, 230);
+    background-size: contain;
+}
+
+.img-products img {
+    display: block;
+    border: 1px solid transparent;
+    width: 100%;
+    margin: auto;
+    background-size: contain;
+}
+
+.iframe-cont {
+    width: 100%;
+    width: 100%;
+    height: 200px;
+}
+
+.text-products {
+    border: 1px solid transparent;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(193, 192, 212);
+    padding: 10px;
+    
+
+}
+
+.no-bg{
+    background: none;
+}
+
+/* FIN seccion PRODUCTOS */
+
+/* mapa */
+
+.map-location {
+    background-color: white;
+    border: 1px solid transparent;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Aquí se define la sombra */
+
+}
+
+.text-desc {
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+}
+/* fin mapa */
+
+/* video */
+
+.video-ref {
+    background-color: white;
+    border: 1px solid transparent;
+    height: auto;
+    margin: 10px;
+    margin-bottom: 40px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Aquí se define la sombra */
+}
+
+
+
+.cont-btn-consulta {
+    border: 1px solid black;
+    color: black;
+    padding: 15px;
+    
+    border-radius: 25px;
+    margin: 30px auto;
+    width: 50%;
+    text-align: center;
+    background-color: rgb(160, 211, 200);
+    padding-bottom: 10px;
+}
+
+.cont-btn-consulta a{
+    text-decoration: none;
+    background-color: rgb(160, 211, 200);
+    color: black;
+    font-size: 2em;
+    
+}
+
+
+
+
+
+
+footer {
+    border: 1px solid transparent;
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+    background-color: rgb(236, 204, 204);
+    padding-bottom: 15%; 
+}
+
+.img-footer{
+    margin: 5px;
+}
+
+/* puntos de quiebre */
+/* Estilos generales */
+
+/* Estilos comunes para todos los tamaños de pantalla */
+
+/* Estilos específicos para dispositivos con un ancho máximo de 768px, es decir, tablets */
+@media screen and (min-width: 568px) {
+    /* Aquí colocas los estilos específicos para tablets */
+    /* Por ejemplo: */
+    footer {
+        
+        height: 200px; 
+    }
+    
+    .img-footer{
+        margin: 5px;
+    }
+    
+    /* lista de menu */
+
+
+.list-menu {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px solid red;
+    list-style: none;
+    width: 100%;
+
+    padding: 5px;
+    margin: 0px auto;
+    background-color: white;
+}
+
+
+
+
+
+
+/* Se posiciona el menu abajo */
+.menu-position {
+    position: relative;
+    
+
+  }
+
+  /* fin menu fixed */
+
+
+
+
+.anchor-menu {
+    text-decoration: none;
+    color: black;
+    border: white;
+}
+
+.cont-a-prod {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* FIN HEADER */
+}
+
+/* Estilos para pantallas de escritorio */
+
+/* Estilos específicos para dispositivos con un ancho mínimo de 1024px, es decir, pantallas de escritorio */
+@media screen and (min-width: 1024px) {
+    footer {
+        border: 2px solid green;
+        height: 60px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 60px;
+        background-color: rgb(236, 204, 204);
+        padding-bottom: 15%; 
+    }
+    
+
+
+
+    
+}
