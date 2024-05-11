@@ -352,7 +352,7 @@ footer {
 /* Se posiciona el menu abajo */
 .menu-position {
     width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 
     border: 2px solid red;
     
@@ -360,6 +360,7 @@ footer {
   }
 
   /* fin menu fixed */
+
 
 
 
@@ -381,6 +382,7 @@ footer {
 
 
 
+
 /* FIN HEADER */
 }
 
@@ -396,8 +398,8 @@ footer {
 
 /* Estilos para pantallas de escritorio */
 
-/* Estilos específicos para dispositivos con un ancho mínimo de 1024px, es decir, pantallas de escritorio */
-@media screen and (min-width: 1024px) {
+/* Estilos específicos para dispositivos con un ancho mínimo de 992/1024px, es decir, pantallas de escritorio */
+@media screen and (min-width: 992px) {
 
     body, main {
         background-color: var(--color-claro);
