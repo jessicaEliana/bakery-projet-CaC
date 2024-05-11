@@ -1,5 +1,5 @@
 :root {
-    --color-principal: rgb(236, 204, 204);
+    --color-principal: #ffffbf;
     --color-secundario: #050505;
     --color-claro: rgb(255, 255, 255);
     --color-oscuro: rgb(0, 0, 0);
@@ -43,7 +43,7 @@
 
 /* banner */
 .banner {
-    border: 1px solid green;
+    
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -63,6 +63,10 @@
     bottom: 0px;
 }
 
+.us-hidden {
+    display: none;
+
+}
 .list-menu {
     display: flex;
     flex-wrap: wrap;
@@ -340,43 +344,17 @@ footer {
 /* Estilos comunes para todos los tamaños de pantalla */
 
 /* Estilos específicos para dispositivos con un ancho máximo de 768px, es decir, tablets */
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 768px) {
     /* Aquí colocas los estilos específicos para tablets */
-    /* Por ejemplo: */
-    footer {
-        
-        height: 200px; 
-    }
-    
-    .img-footer{
-        margin: 5px;
-    }
     
     /* lista de menu */
 
-
-.list-menu {
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border: 2px solid red;
-    list-style: none;
-    width: 100%;
-
-    padding: 5px;
-    margin: 0px auto;
-    background-color: white;
-}
-
-
-
-
-
-
 /* Se posiciona el menu abajo */
 .menu-position {
-    position: relative;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    border: 2px solid red;
     
 
   }
@@ -397,30 +375,320 @@ footer {
     color: black;
 }
 
+.text-products {
+    background-color: var(--color-claro);
+}
+
 
 
 /* FIN HEADER */
+}
+
+footer {
+        
+    height: 200px; 
+    background-color: var(--color-principal);
+}
+
+.img-footer{
+    margin: 5px;
 }
 
 /* Estilos para pantallas de escritorio */
 
 /* Estilos específicos para dispositivos con un ancho mínimo de 1024px, es decir, pantallas de escritorio */
 @media screen and (min-width: 1024px) {
-    footer {
-        border: 2px solid green;
+
+    body, main {
+        background-color: var(--color-claro);
+    }
+
+   .menu-position {
+        position: fixed;
+        top: 0;
+    }
+
+    .list-menu {
+        position: relative;
+        top: 0;
+    }
+    
+    /* contenido del HEADER */
+
+    /* barra de navegacion para pc */
+    .logo {
+        display: block;
         height: 60px;
+        width: auto;
+        position: relative;
+        float: left;
+        z-index: 1000;
+        margin: 5px;
+        background-color: var(--color-principal);
+    }
+
+    .logo img {
+        
+        height: 60px;
+        padding: 5px;
+        background-color: var(--color-principal);
+    }
+
+    h1 {
+        display: inline-block;
+        font-size: 1.5rem;
+        position: absolute;
+        width: 300px;
+        margin: 20px 10px 10px 5px;
+        font-family: "Raleway", sans-serif;
+        background-color: var(--color-principal);
+    }
+
+        
+    
+    
+    
+    /* banner */
+    .banner {
+        
+        width: 100%;
+       border: 0;
+        background-color: var(--color-principal);
+    }
+
+    .banner img {
+        border: 0;
+        position: relative;;
+    }
+    
+
+/* acceso a nosotros */
+    .us-hidden {
+        display: block;
+        font-weight: 600;
+        font-size: 1em;
+        font-family: "Raleway", sans-serif;
+    }
+    
+    /* lista de menu */
+    .nav-bar {
+        position: fixed;
+        border: 2px solid transparent;
+        z-index: 1000;
+        float: right;
+        background-color: var(--color-secundario);
+        margin: 15px 50px;
+        top: 0;
+        
+    }
+
+    .nav-bar li a {
+        background-color: transparent;
+        color: var(--color-claro);
+        text-transform: uppercase;
+    }
+    
+    .nav-bar li a:hover {
+        color: #a60029;
+        background-color: transparent;
+    }
+    
+  
+
+    
+    
+    
+    .nav-bar li ul li {
+        background-color: var(--color-oscuro);
+        padding: 5px;
+    }
+    
+
+
+    .list-menu{
+        
+        background-color: transparent;
+        justify-content: space-around;
+        
+    
+        
+        
+        
+    }
+
+    .item-menu{
+        background-color: var(--color-oscuro);
+        padding: 0;
+    }
+
+    
+
+    .product-word::before {
+        content: 'Productos';
+        font-weight: 600;
+        font-size: 1em;
+        font-family: "Raleway", sans-serif;
+    }
+
+    .home-word::before {
+        content: 'Home';
+        font-weight: 600;
+        font-size: 1em;
+        font-family: "Raleway", sans-serif;
+    }
+
+    .contact-word::before {
+        content: 'Contacto';
+        font-weight: 600;
+        font-size: 1em;
+        font-family: "Raleway", sans-serif;
+    }
+
+
+
+
+
+
+    .menu-position {
+        width: 500px;
+        position: relative;
+        
+    }
+
+    /* FIN HEADER */
+    
+    /* div para slogan */
+    
+    .slogan{
+        border: 1px solid transparent;
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+        color: black;
+        padding: 40px;
+        background-image: radial-gradient(circle, var(--color-claro), var(--color-principal));
+        
+    }
+    
+    .slogan p {
+        padding: 5px;
+        font-size: 2em;
+        background: none;
+        text-align: center;
+    }
+    
+    /* fin slogan */
+    
+    /* seccion PRODUCTOS */
+    
+    .section-prods {
+        height: auto;
+        background-color: var(--color-claro);
+        
+        border: 1px solid transparent;
+        margin: 10px;
+        padding: 10px;
+        width: 100%;
+        
+    
+    }
+
+    .all-products{
+        width: 100%;
+        margin: 0;
+    }
+    
+
+    
+    .product {
+        background-color: var(--color-claro);
+        padding: 10px;
+        margin: 10px auto;
+        width: 100%;
+        
+    }
+    
+    .title-2 {
+        color: var(--color-oscuro);
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        font-weight: 500;
+        border: 1px solid var(--color-oscuro);
+        background-color: var(--color-principal);
+
+    }
+    
+    .img-products {
+        margin: auto;
+        padding: 10px;
+        height: auto;
+        width: 90%;
+        border: 1px solid transparent;
+        background-color: var(--color-claro);
+        background-size: contain;
+    }
+    
+ 
+
+    
+    /* seccion more */
+    .section-more {
+        background-color: var(--color-claro);
+    }
+
+    /* mapa para pc*/
+    
+    .map-location {
+        background-color: var(--color-claro);
+        border: 1px solid transparent;
+        height: auto;
+        margin: 10px;
+        padding: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Aquí se define la sombra */
+    
+    }
+    
+    .text-desc {
+        background-color: var(--color-claro);
+        padding: 5px;
+        margin: 5px;
+    }
+    /* fin mapa */
+    
+    /* video para pc*/
+    
+    .video-ref {
+        background-color: var(--color-claro);
+        height: auto;
+        margin: 10px;
+        margin-bottom: 40px;
+        padding: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Aquí se define la sombra */
+    }
+    
+    /* footer para pc */
+    footer {
+        
+        height: 300px;
         width: 100%;
         margin: 0 auto;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-        padding: 60px;
-        background-color: rgb(236, 204, 204);
+        padding: 10px;
+        background-color: var(--color-principal);
         padding-bottom: 15%; 
     }
-    
 
+    .img-footer {
+        
+        background-color: var(--color-principal);
+    }
 
-
-    
+    footer img {
+        background-color: var(--color-principal);
+    }
 }
+
+
