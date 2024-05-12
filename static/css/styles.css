@@ -467,9 +467,7 @@ footer {
 /* acceso a nosotros */
     .us-hidden {
         display: block;
-        font-weight: 600;
-        font-size: 1em;
-        font-family: "Raleway", sans-serif;
+
     }
     
     /* lista de menu */
@@ -488,6 +486,9 @@ footer {
         background-color: transparent;
         color: var(--color-claro);
         text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1em;
+        font-family: "Raleway", sans-serif;
     }
     
     .nav-bar li a:hover {
@@ -598,6 +599,8 @@ footer {
     .all-products{
         width: 100%;
         margin: 0;
+        display: grid;
+        grid-template-columns: auto auto auto;
     }
     
 
@@ -607,6 +610,7 @@ footer {
         padding: 10px;
         margin: 10px auto;
         width: 100%;
+
         
     }
     
@@ -636,6 +640,8 @@ footer {
     
     /* seccion more */
     .section-more {
+        display: grid;
+        grid-template-columns: auto auto;
         background-color: var(--color-claro);
     }
 
@@ -672,7 +678,7 @@ footer {
     /* footer para pc */
     footer {
         
-        height: 300px;
+        height: 200px;
         width: 100%;
         margin: 0 auto;
         display: flex;
@@ -680,7 +686,7 @@ footer {
         align-items: flex-end;
         padding: 10px;
         background-color: var(--color-principal);
-        padding-bottom: 15%; 
+        ; 
     }
 
     .img-footer {
