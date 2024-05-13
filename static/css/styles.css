@@ -13,7 +13,9 @@
     font-family: "Raleway", sans-serif;
 }
 
-
+body, main, .section-more {
+    background-color: var(--color-claro);
+}
 
 .img-products {
     margin: auto;
@@ -27,7 +29,6 @@
 
 .banner img {
     display: block;
-    border: 1px solid transparent;
     width: 100%;
     margin: auto;
     background-size: contain;
@@ -85,9 +86,10 @@
     color: white;
     text-align: center;
     padding: 5px;
-    border: 1px solid white;
+    border: 1px solid red;
     background-color: white;
     border: none;
+    
     
     /* border-right: 2px solid palevioletred; */
     
@@ -96,8 +98,7 @@
 
 /* ENLACES DE LOS ITEMS DENTRO DE LA CLASE-LISTA-DESORDENADA */
 .item-menu a {
-    background-color: white;
-    border: 1px solid transparent;
+   
     color: black;
     text-decoration: none;
     padding: 5px;
@@ -106,20 +107,16 @@
     height: 4vh;
     font-size: 1em;
     list-style-type: none;
+    background-color: white;
 }
 
-.list-menu li a:hover {
-    background-color: rgba(119, 115, 116, 0.37);
-    /* border-right: 2px solid palevioletred; */
-    list-style: none;
-    padding: 5px;
-    
-}
+
 
 
 
 .list-menu > li {
     float:left ;
+
     
 }
 
@@ -128,11 +125,13 @@
     position: absolute;
     min-width: 140px;
     list-style-type: none;
+    
 }
 
 .list-menu li:hover > ul {
     display: block;
     z-index: 10;
+    
 }
 
 
@@ -168,13 +167,13 @@
 /* div para slogan */
 
 .slogan{
-    border: 1px solid transparent;
+
     width: 100%;
     margin: 0 auto;
     height: auto;
     color: black;
     padding: 40px;
-    background-image: radial-gradient(circle, white, pink);
+    background-image: radial-gradient(circle, white, var(--color-principal));
     
 }
 
@@ -206,7 +205,7 @@
 }
 
 .product {
-    background-color: rgb(198, 187, 209);
+    background-color: var(--color-claro);
     padding: 10px;
     margin: 10px auto;
     max-width: 95%;
@@ -219,7 +218,7 @@
     margin: 10px;
     padding: 10px;
     font-weight: 500;
-    background-color: rgb(233, 217, 220);
+    background-color: var(--color-principal);
 }
 
 .img-products {
@@ -228,7 +227,7 @@
     height: auto;
     width: 90%;
     border: 1px solid transparent;
-    background-color: rgb(199, 199, 230);
+    background-color: transparent;
     background-size: contain;
 }
 
@@ -250,7 +249,7 @@
     border: 1px solid transparent;
     width: 90%;
     margin: auto;
-    background-color: rgb(193, 192, 212);
+    background-color: transparent;
     padding: 10px;
     
 
@@ -258,6 +257,17 @@
 
 .no-bg{
     background: none;
+}
+
+.item-us {
+    margin: 15px;
+    padding: 20px 50px;
+    background-color: var(--color-principal);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Aquí se define la sombra */
+}
+
+.item-us > p, h2 {
+    background-color: var(--color-principal);
 }
 
 /* FIN seccion PRODUCTOS */
@@ -322,19 +332,25 @@
 
 
 footer {
-    border: 1px solid transparent;
-    height: 100px;
-    width: 100%;
-    margin: 0 auto;
+    height: 200px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding: 10px;
-    background-color: rgb(236, 204, 204);
-    padding-bottom: 15%; 
+    padding: 0;
+    background-image: radial-gradient(circle, var(--color-principal));
+
+    
+}
+
+footer img {
+    background: none;
+
+    padding-bottom: 50%;
 }
 
 .img-footer{
+    
+    background: transparent;
     margin: 5px;
 }
 
@@ -349,37 +365,144 @@ footer {
     
     /* lista de menu */
 
-/* Se posiciona el menu abajo */
-.menu-position {
+
+
+body, main, .section-more {
+    background-color: var(--color-claro);
+}
+
+.banner img {
+    border: none;
+
+}
+
+.nav-bar {
+    display: flex;
+    position: relative;
+    background-color: var(--color-oscuro);
+    justify-content: space-around;
+    z-index: 100;
+    
+    
+}
+
+.us-hidden {
+    display: block;
+}
+
+.us-hidden a {
+    font-weight: 600;
+    font-size: 1em;
+    font-family: "Raleway", sans-serif;
+    background-color: var(--color-oscuro);
+    color: var(--color-principal);
+}
+
+.nav-bar li a:hover {
+    color: #a60029;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+.nav-bar li ul li {
+    background-color: var(--color-oscuro);
+    padding: 5px;
+}
+
+
+.list-menu {
     width: 100%;
-    
-
-    border: 2px solid red;
-    
-
-  }
-
-  /* fin menu fixed */
-
-
-
-
-
-.anchor-menu {
-    text-decoration: none;
-    color: black;
-    border: white;
+    margin: auto;
+    background-color: var(--color-oscuro);
+    position: fixed;
+    top: 0;
 }
 
-.cont-a-prod {
-    text-decoration: none;
-    color: black;
+.item-menu {
+    background-color: var(--color-oscuro);
+    
 }
+.item-menu a {
+    background-color: var(--color-oscuro);
+    color: #ffffbf;
+    padding: 5px;
+    margin: 5px 0;
+   
+}
+
+
+.product-word::before {
+    content: 'Productos';
+    font-weight: 600;
+    font-size: 1em;
+    font-family: "Raleway", sans-serif;
+    background-color: transparent;
+    color: var(--color-principal);
+}
+
+.home-word::before {
+    content: 'Home';
+    font-weight: 600;
+    font-size: 1em;
+    font-family: "Raleway", sans-serif;
+    background-color: var(--color-oscuro);
+    color: var(--color-principal);
+}
+
+.contact-word::before {
+    content: 'Contacto';
+    font-weight: 600;
+    font-size: 1em;
+    font-family: "Raleway", sans-serif;
+    background-color: var(--color-oscuro);
+    color: var(--color-principal);
+}
+
+.contact-word:hover:before,
+.home-word:hover:before,
+.product-word:hover::before {
+    color: #a60029;
+}
+
+
 
 .text-products {
     background-color: var(--color-claro);
 }
 
+/* seccion de productos */
+
+.all-products {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: var(--color-claro);
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 95%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Aquí se define la sombra */
+}
+
+
+.product {
+    background-color: var(--color-claro);
+}
+
+.item-us {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 20px 50px;
+    background-color: var(--color-principal);
+}
+
+.item-us > p, h2 {
+    background-color: var(--color-principal);
+}
 
 
 
@@ -388,12 +511,20 @@ footer {
 
 footer {
         
-    height: 200px; 
-    background-color: var(--color-principal);
+     
+    background-image: radial-gradient(circle, white, var(--color-principal));
+    margin: 0;
+    
+}
+
+footer img {
+    background-color: transparent;
+    margin: auto;
 }
 
 .img-footer{
-    margin: 5px;
+    margin-bottom: 20px;
+    background-color: transparent;
 }
 
 /* Estilos para pantallas de escritorio */
@@ -401,9 +532,7 @@ footer {
 /* Estilos específicos para dispositivos con un ancho mínimo de 992/1024px, es decir, pantallas de escritorio */
 @media screen and (min-width: 992px) {
 
-    body, main {
-        background-color: var(--color-claro);
-    }
+
 
    .menu-position {
         position: fixed;
@@ -467,6 +596,8 @@ footer {
 /* acceso a nosotros */
     .us-hidden {
         display: block;
+        
+        
 
     }
     
@@ -483,8 +614,9 @@ footer {
     }
 
     .nav-bar li a {
-        background-color: transparent;
-        color: var(--color-claro);
+        
+        background-color: var(--color-oscuro);
+        color: var(--color-principal);
         text-transform: uppercase;
         font-weight: 600;
         font-size: 1em;
@@ -495,6 +627,8 @@ footer {
         color: #a60029;
         background-color: transparent;
     }
+
+    
     
   
 
@@ -547,9 +681,11 @@ footer {
         font-family: "Raleway", sans-serif;
     }
 
-
-
-
+    .contact-word:hover::before,
+    .home-word:hover::before,
+    .product-word:hover::before {
+        color: #a60029;
+    }
 
 
     .menu-position {
@@ -634,6 +770,39 @@ footer {
         background-color: var(--color-claro);
         background-size: contain;
     }
+
+    /* estilos para nosotros */
+.contenedor {
+    background-color: var(--third-color);
+    width: 100%;
+    height: 90%;
+    padding: 50px;
+    margin-top: 5px;
+    
+    
+}
+
+.centrar-contenido {
+    text-align: center;
+    
+    
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.item-us {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 20px 50px;
+    background-color: var(--color-principal);
+}
+
+.item-us > p, h2 {
+    background-color: var(--color-principal);
+}
+/* fin de estilo de nosotros */
     
  
 
@@ -685,16 +854,18 @@ footer {
         justify-content: flex-end;
         align-items: flex-end;
         padding: 10px;
+        background-image: none;
         background-color: var(--color-principal);
         ; 
     }
 
     .img-footer {
-        
+        background-image: none;
         background-color: var(--color-principal);
     }
 
     footer img {
+        background-image: none;
         background-color: var(--color-principal);
     }
 }
