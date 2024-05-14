@@ -192,15 +192,75 @@ body, main, .section-more {
     height: auto;
     background-color: var(--color-claro);
     
-    border: 1px solid transparent;
+    
     margin: 10px;
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Aquí se define la sombra */
 
 }
 
+.section-contact {
+    height: auto;
+    background-color: var(--color-claro);
+    width: 95%;
+    
+    margin: 10px auto;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Aquí se define la sombra */
+}
+
+.section-contact h2{
+    background-color: var(--color-claro);
+}
+
+.container {
+    
+    margin: 10px auto;
+    width: 95%;
+    background-color: var(--color-claro);
+    
+}
+
+form {
+
+    border: 1px solid var(--color-oscuro);
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 10px;
+    background-color: var(--color-claro);
+    border-radius: 20px;
+    text-align: left;
+    
+    
+}
+label {
+    
+    background-color: var(--color-claro);
+    display: block;
+    margin-bottom: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: var(--color-claro);
+    
+}
+
+fieldset, legend, label, input, p,
+.form-group, .mb-3 {
+    background-color: var(--color-claro);
+}
+
 .all-products {
     background-color: var(--color-claro);
+
     
 }
 
@@ -210,6 +270,7 @@ body, main, .section-more {
     margin: 10px auto;
     max-width: 95%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Aquí se define la sombra */
+    
 }
 
 .title-2 {
@@ -332,26 +393,31 @@ body, main, .section-more {
 
 
 footer {
-    height: 200px;
+    height: auto;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     padding: 0;
+    margin-bottom: 20px;
     background-image: radial-gradient(circle, var(--color-principal));
+    background-color: var(--color-oscuro);
+    
 
     
 }
 
 footer img {
     background: none;
-
-    padding-bottom: 50%;
+    margin-bottom: 30px;
+    padding-bottom: 20px 5px;
+    
 }
 
 .img-footer{
     
     background: transparent;
-    margin: 5px;
+    margin: 10px 5px;
+    
 }
 
 /* puntos de quiebre */
@@ -488,6 +554,10 @@ body, main, .section-more {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Aquí se define la sombra */
 }
 
+.section-contact {
+    
+    width: 98%;
+}
 
 .product {
     background-color: var(--color-claro);
@@ -503,17 +573,11 @@ body, main, .section-more {
 .item-us > p, h2 {
     background-color: var(--color-principal);
 }
-
-
-
-/* FIN HEADER */
-}
-
 footer {
         
      
     background-image: radial-gradient(circle, white, var(--color-principal));
-    margin: 0;
+    margin-bottom: 0px;
     
 }
 
@@ -525,6 +589,10 @@ footer img {
 .img-footer{
     margin-bottom: 20px;
     background-color: transparent;
+}
+
+
+/* FIN HEADER */
 }
 
 /* Estilos para pantallas de escritorio */
@@ -723,18 +791,21 @@ footer img {
     .section-prods {
         height: auto;
         background-color: var(--color-claro);
-        
-        border: 1px solid transparent;
-        margin: 10px;
-        padding: 10px;
-        width: 100%;
+        margin: 5px auto;
+        padding: 5px;
+        width: 95%;
         
     
     }
 
+    .section-contact {
+    
+        width: 95%;
+    }
+
     .all-products{
         width: 100%;
-        margin: 0;
+        margin: 5px auto;
         display: grid;
         grid-template-columns: auto auto auto;
     }
