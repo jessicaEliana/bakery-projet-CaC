@@ -32,6 +32,7 @@
         <!-- barra de navegación -->
         <!-- <div id="menu_navegacion " class="contenido-barra fixed"></div> -->
         <nav class="nav-bar menu-position">
+
             <!-- LISTA DESORDENADA DEL MENU -->
             <ul class="list-menu">
 
@@ -40,9 +41,9 @@
                     <!-- ENLACE PRODUCTOS -->
                     <a class="anchor-menu" href=""><i class="fa-solid fa-bars no-bg product-word"></i></a>
                     <!-- LISTA DE PRODUCTOS -->
-                    <ul>
+                    <ul class="enlace">
                         <!-- ITEM TORTAS -->
-                        <li>
+                        <li class="enlace">
                             <!-- ENLACE A TORTAS -->
                             <a href="">Tortas</a>
                         </li>
@@ -65,7 +66,7 @@
                 <!-- ITEM INICO O HOME -->
                 <li class="item-menu">
                     <!-- ENLACE HOME-->
-                    <a href=""><i class="fa-solid fa-house no-bg home-word"></i></a>
+                    <a class="anchor-menu" href=""><i class="fa-solid fa-house no-bg home-word"></i></a>
                 </li>
 
                 <!-- ITEM NOSOTROS -->
@@ -97,7 +98,7 @@
             <!-- Banner -->
             <div class="banner">
                 <!-- imagen de banner -->
-                <img class="banner-img" src="./static/img/bakery1.png" alt="">
+                <img class="banner-img" src="./static/img/bakery2.png" alt="">
             </div>
 
                     <!-- div caja para frase -->
@@ -110,68 +111,70 @@
 
 
         <!-- Seccion productos -->
-        <section class="contenido-sec-prod section-prods">
+        <section class="section-prods">
         <!-- todos los productos -->
-            <div class="contenido-productos all-products">
+            <div class="all-products">
                 <!-- Tortas -->
                 <div class="product cakes grid-item">
-                    <h2 class="contenido-titulo2 title-2">TORTAS</h2>
 
-                    <div class="contenido-img img-products">
+                    <h2 class="title-2">TORTAS</h2>
+                    <div class="img-products">
                         <img src="./static/img/assortment-pieces-cake.jpg" alt="">
                     </div>
+                    <p class="text-products">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellendus sit quasi autem architecto enim voluptatem quidem soluta, optio harum natus! Repudiandae sapiente molestiae ipsa nulla similique soluta praesentium laboriosam.
 
-                   <p class="cont-desc-img text-products">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellendus sit quasi autem architecto enim voluptatem quidem soluta, optio harum natus! Repudiandae sapiente molestiae ipsa nulla similique soluta praesentium laboriosam.</p>
+                    </p>
 
                 </div>
 
                 <!-- Postres -->
-                <div class="contenido-prod contenido-postres product desserts">
-                    <h2 class="contenido-titulo2 title-2">POSTRES</h2>
+                <div class="product desserts">
+                    <h2 class="title-2">POSTRES</h2>
 
-                    <div class="contenido-img img-products">
+                    <div class="img-products">
                         <img src="./static/img/mini-cheese.png" alt="">
                     </div>
 
-                    <p class="cont-desc-img text-products">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellendus sit quasi autem architecto enim voluptatem quidem soluta, optio harum natus! Repudiandae sapiente molestiae ipsa nulla similique soluta praesentium laboriosam.</p>
+                    <p class="text-products">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellendus sit quasi autem architecto enim voluptatem quidem soluta, optio harum natus! Repudiandae sapiente molestiae ipsa nulla similique soluta praesentium laboriosam.</p>
 
                 </div>
 
                 <!-- Salados -->
-                <div class="contenido-prod contenido-salados product sweets">
-                    <h2 class="contenido-titulo2 title-2">MASAS</h2>
+                <div class="product sweets">
+                    <h2 class="title-2">MASAS</h2>
 
-                    <div class="contenido-img img-products">
+                    <div class="img-products">
                         <img src="./static/img/galletas1.jpg" alt="">
                     </div>
 
-                    <p class="cont-desc-img text-products">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellendus sit quasi autem architecto enim voluptatem quidem soluta, optio harum natus! Repudiandae sapiente molestiae ipsa nulla similique soluta praesentium laboriosam.</p>
+                    <p class="text-products">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellendus sit quasi autem architecto enim voluptatem quidem soluta, optio harum natus! Repudiandae sapiente molestiae ipsa nulla similique soluta praesentium laboriosam.</p>
 
                 </diV>
+            </diV>
+            
 
-            </div>
+            
 
-                            <!-- Ejemplo con nosotros en el home -->
+                <!-- Ejemplo con nosotros en el home -->
+                <div id="us" class="all-products">
+                    <!-- contenedor centrar-contenido -->
+    
+                        <!-- NOSOTROS -->
+                        <div class="text-justify item-us">
+                        <h2>NOSOTROS</h2><br>
+                        
+                        <p>Presentación: Codo a Codo Bakery</p>
+                        <p>Introducción</p><br>
+                        <p>¡Bienvenidos a Codo a Codo Bakery! Somos un lugar donde la pasión por la repostería se une con la creatividad y el sabor. Nuestro objetivo es endulzar tus días con deliciosos postres y panes frescos. ¡Vamos a conocer más sobre nosotros!
+                        </p>
+                        <p>Nuestra Historia</p><br>
+                        <p>Fundado en 2020, Codo a Codo Bakery nació de la pasión de cuatro amigos por el arte de hornear y codear.
+                        Inspirados por la tradición y la innovación, creamos recetas únicas que fusionan lo clásico con lo contemporáneo.
+                        Desde entonces, hemos estado sirviendo a nuestra comunidad con amor y dedicación. </p>
+                        </div>
+                    </div>
 
-                            <div id="us" class="contenedor centrar-contenido all-products">
-
-                                <div class="text-justify item-us">
-                                    <h2>NOSOTROS</h2>
-                                    <br>
-                    
-                                    <p>Presentación: Codo a Codo Bakery</p>
-                                        <p>Introducción</p>
-                    
-                                    <br>
-                                    <p>¡Bienvenidos a Codo a Codo Bakery! Somos un lugar donde la pasión por la repostería se une con la creatividad y el sabor. Nuestro objetivo es endulzar tus días con deliciosos postres y panes frescos. ¡Vamos a conocer más sobre nosotros!
-                                    </p>
-                                    <p>Nuestra Historia</p>
-                                    <br>
-                                    <p>Fundado en 2020, Codo a Codo Bakery nació de la pasión de cuatro amigos por el arte de hornear y codear.
-                                        Inspirados por la tradición y la innovación, creamos recetas únicas que fusionan lo clásico con lo contemporáneo.
-                                        Desde entonces, hemos estado sirviendo a nuestra comunidad con amor y dedicación. </p>
-                                </div>
-                            </div>
+            </diV>
             
         </section>
 
@@ -179,11 +182,9 @@
         <section id="contact" class="section-contact">
             <div class="contenedor container">
                 
-                <h2 class="seccion-contacto">CONTACTO</h2>
-                <br>
-                
+                <h2 class="seccion-contacto">CONTACTO</h2><br>
 
-                            <!-- modelo de formulario -->
+                <!-- modelo de formulario -->
                 <form action="/submit_pedido" method="post">
                     <fieldset>
                         <legend>Formulario</legend>
@@ -240,18 +241,19 @@
             </div>
         </section>
 
-        <section class="contenido-sec-2 section-more">
-                    <!-- donde estamos -->
-        <div class="contenido-mapa map-location">
-            <p class="p-descripcion text-desc">-- iframe mapa --</p>
-            <iframe class="iframe-cont" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6726983.846388018!2d-58.3843478!3d-34.5874666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa546f3c19d%3A0x9d528d1f08195c58!2sAtelier%20Pastry%20-%20Patisserie!5e0!3m2!1ses-419!2sar!4v1713633313182!5m2!1ses-419!2sar" width="350px" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <!-- sección más -->
+        <section class="section-more">
+        <!-- donde estamos -->
+            <div class="map-location">
+                <p class="text-desc">-- iframe mapa --</p>
+                <iframe class="iframe-cont" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6726983.846388018!2d-58.3843478!3d-34.5874666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa546f3c19d%3A0x9d528d1f08195c58!2sAtelier%20Pastry%20-%20Patisserie!5e0!3m2!1ses-419!2sar!4v1713633313182!5m2!1ses-419!2sar" width="350px" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
-        <!-- lo que hacemos -->
-        <div class="contenido-video video-ref">
-            <p class="p-descripcion text-desc">-- iframe video --</p>
-            <iframe class="iframe-cont"  width="600" height="450" src="https://www.youtube.com/embed/JkrYkFxL29A" title="CHEESECAKE CLÁSICO | La receta del clásico NEW YORK Cheesecake - CUKit!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+            <!-- lo que hacemos -->
+            <div class="video-ref">
+                <p class="text-desc">-- iframe video --</p>
+                <iframe class="iframe-cont"  width="600" height="450" src="https://www.youtube.com/embed/JkrYkFxL29A" title="CHEESECAKE CLÁSICO | La receta del clásico NEW YORK Cheesecake - CUKit!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
 
                 <!-- boton de contacto -->
                 <!-- <div class="cont-btn-consulta">
@@ -265,16 +267,15 @@
 
     </main>
 
-    <footer class="contenido-footer">
+    <footer class="">
 
         <!-- redes -->
         <a class="img-footer" href="https://github.com/jessicaEliana/bakery-projet-CaC"><img src="./static/img/icons8-github-48.png" alt="enlace al repositorio del proyecto" title="enlace al repositorio del proyecto"></a>
         <a class="img-footer" href="#"><img src="./static/img/icons8-whatsapp-48.png" alt="enlace a whatsup"></a>
         <a class="img-footer" href="#"><img src="./static/img/icons8-instagram-48.png" alt="enlace a instagram"></a>
         <a class="img-footer" href="#"><img src="./static/img/icons8-youtube-48.png" alt="enlace a youtube"></a>
-      
-
     </footer>
-    
+
+    <script src="./static/js/generales.js"></script>    
 </body>
 </html>

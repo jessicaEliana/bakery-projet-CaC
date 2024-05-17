@@ -1,6 +1,6 @@
 :root {
     --color-principal: #ffffbf;
-    --color-secundario: #050505;
+    --color-secundario: #f57433;
     --color-claro: rgb(255, 255, 255);
     --color-oscuro: rgb(0, 0, 0);
 }
@@ -9,70 +9,53 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(236, 204, 204);
     font-family: "Raleway", sans-serif;
+    color: var(--color-oscuro);
+    /* background-color: var(--color-claro); */
 }
 
-body, main, .section-more {
+/* body, main, .section-more {
     background-color: var(--color-claro);
-}
+} */
 
-.img-products {
+/* .img-products {
     margin: auto;
     padding: 10px;
     height: auto;
     width: 90%;
-    border: 1px solid transparent;
+    
     background-color: rgb(199, 199, 230);
     background-size: contain;
-}
+} */
 
-.banner img {
-    display: block;
-    width: 100%;
-    margin: auto;
-    background-size: contain;
-}
 
 /* contenido del HEADER */
+
 .logo {
     display: none;
 }
-    
 
+/* barra de navegacion para movil */
 
-
-/* banner */
-.banner {
-    
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    background-size: cover;
-    background-color: #050505;
-    border: 1px solid transparent;
-    position: relative;
-    z-index: 1;
-
-    
-}
-
-/* lista de menu */
 .nav-bar {
     display: flex;
     position: sticky;
     bottom: 0px;
 }
 
+
+/* clase nosotros escondida para movil */
 .us-hidden {
     display: none;
 
+    
 }
+
+/* lista de menu */
 .list-menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    border-width: 1px;
     list-style: none;
     padding: 5px;
     margin: 0px;
@@ -80,26 +63,14 @@ body, main, .section-more {
     width: 100%;
 }
 
-/* clase para los items */
+/* clase para los items del menu*/
 .item-menu {
-
-    color: white;
     text-align: center;
     padding: 5px;
-    border: 1px solid red;
-    background-color: white;
-    border: none;
-    
-    
-    /* border-right: 2px solid palevioletred; */
-    
-    
 }
 
-/* ENLACES DE LOS ITEMS DENTRO DE LA CLASE-LISTA-DESORDENADA */
+/* enlaces de los items del menu */
 .item-menu a {
-   
-    color: black;
     text-decoration: none;
     padding: 5px;
     display: flex;
@@ -107,32 +78,28 @@ body, main, .section-more {
     height: 4vh;
     font-size: 1em;
     list-style-type: none;
-    background-color: white;
 }
-
-
-
-
 
 .list-menu > li {
     float:left ;
-
-    
 }
 
+
+/* submenu */
 .list-menu li ul {
-    display: none;  
+    display: none;
     position: absolute;
     min-width: 140px;
     list-style-type: none;
-    
+
 }
 
+/* esto es para tablets  y escritorio */
 .list-menu li:hover > ul {
     display: block;
     z-index: 10;
-    
 }
+/* falta un onclick para celular */
 
 
 
@@ -142,39 +109,40 @@ body, main, .section-more {
     bottom: 0;
     left: 0;
     width: 100%;
-  }
+}
 
   /* fin menu */
 
-
-
-
 .anchor-menu {
     text-decoration: none;
-    color: black;
-    border: white;
 }
-
-.cont-a-prod {
-    text-decoration: none;
-    color: black;
-}
-
-
 
 /* FIN HEADER */
 
+/* banner */
+.banner {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    margin: auto;
+    background-size: contain;
+}
+
 /* div para slogan */
-
 .slogan{
-
     width: 100%;
     margin: 0 auto;
     height: auto;
-    color: black;
     padding: 40px;
     background-image: radial-gradient(circle, white, var(--color-principal));
-    
 }
 
 .slogan p {
@@ -183,16 +151,14 @@ body, main, .section-more {
     background: none;
     text-align: center;
 }
-
 /* fin slogan */
 
 /* seccion PRODUCTOS */
-
 .section-prods {
     height: auto;
     background-color: var(--color-claro);
-    
-    
+
+
     margin: 10px;
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Aquí se define la sombra */
@@ -203,7 +169,7 @@ body, main, .section-more {
     height: auto;
     background-color: var(--color-claro);
     width: 95%;
-    
+
     margin: 10px auto;
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Aquí se define la sombra */
@@ -214,11 +180,11 @@ body, main, .section-more {
 }
 
 .container {
-    
+
     margin: 10px auto;
     width: 95%;
     background-color: var(--color-claro);
-    
+
 }
 
 form {
@@ -230,11 +196,11 @@ form {
     background-color: var(--color-claro);
     border-radius: 20px;
     text-align: left;
-    
-    
+
+
 }
 label {
-    
+
     background-color: var(--color-claro);
     display: block;
     margin-bottom: 10px;
@@ -250,7 +216,7 @@ select {
     border-radius: 10px;
     box-sizing: border-box;
     background-color: var(--color-claro);
-    
+
 }
 
 fieldset, legend, label, input, p,
@@ -261,7 +227,7 @@ fieldset, legend, label, input, p,
 .all-products {
     background-color: var(--color-claro);
 
-    
+
 }
 
 .product {
@@ -270,7 +236,7 @@ fieldset, legend, label, input, p,
     margin: 10px auto;
     max-width: 95%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Aquí se define la sombra */
-    
+
 }
 
 .title-2 {
@@ -287,7 +253,7 @@ fieldset, legend, label, input, p,
     padding: 10px;
     height: auto;
     width: 90%;
-    border: 1px solid transparent;
+    border: 1px solid rgb(34, 0, 0);
     background-color: transparent;
     background-size: contain;
 }
@@ -312,7 +278,7 @@ fieldset, legend, label, input, p,
     margin: auto;
     background-color: transparent;
     padding: 10px;
-    
+
 
 }
 
@@ -370,7 +336,7 @@ fieldset, legend, label, input, p,
     border: 1px solid black;
     color: black;
     padding: 15px;
-    
+
     border-radius: 25px;
     margin: 30px auto;
     width: 50%;
@@ -384,7 +350,7 @@ fieldset, legend, label, input, p,
     background-color: rgb(160, 211, 200);
     color: black;
     font-size: 2em;
-    
+
 }
 
 
@@ -401,23 +367,23 @@ footer {
     margin-bottom: 20px;
     background-image: radial-gradient(circle, var(--color-principal));
     background-color: var(--color-oscuro);
-    
 
-    
+
+
 }
 
 footer img {
     background: none;
     margin-bottom: 30px;
     padding-bottom: 20px 5px;
-    
+
 }
 
 .img-footer{
-    
+
     background: transparent;
     margin: 10px 5px;
-    
+
 }
 
 /* puntos de quiebre */
@@ -428,59 +394,49 @@ footer img {
 /* Estilos específicos para dispositivos con un ancho máximo de 768px, es decir, tablets */
 @media screen and (min-width: 768px) {
     /* Aquí colocas los estilos específicos para tablets */
+
+    /* HEADER TABLES */
     
-    /* lista de menu */
 
-
-
-body, main, .section-more {
-    background-color: var(--color-claro);
-}
-
-.banner img {
-    border: none;
-
-}
 
 .nav-bar {
     display: flex;
     position: relative;
     background-color: var(--color-oscuro);
     justify-content: space-around;
-    z-index: 100;
+    z-index: 11;
+}
+
+.nav-bar li ul li {
+    background-color: var(--color-oscuro);
+    font-weight: 600;
+    padding: 5px;
+}
+
+/* .nav-bar li a {
     
-    
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1em;
+    font-family: "Raleway", sans-serif;
+    border: 1px solid palevioletred;
+} */
+
+.nav-bar li a:hover {
+    color: var(--color-secundario); 
 }
 
 .us-hidden {
     display: block;
 }
 
-.us-hidden a {
+.us-hidden > a {
     font-weight: 600;
     font-size: 1em;
     font-family: "Raleway", sans-serif;
-    background-color: var(--color-oscuro);
-    color: var(--color-principal);
+    padding: 1px;
+    margin: 0
 }
-
-.nav-bar li a:hover {
-    color: #a60029;
-    background-color: transparent;
-}
-
-
-
-
-
-
-
-
-.nav-bar li ul li {
-    background-color: var(--color-oscuro);
-    padding: 5px;
-}
-
 
 .list-menu {
     width: 100%;
@@ -490,25 +446,15 @@ body, main, .section-more {
     top: 0;
 }
 
-.item-menu {
-    background-color: var(--color-oscuro);
-    
-}
 .item-menu a {
-    background-color: var(--color-oscuro);
-    color: #ffffbf;
-    padding: 5px;
-    margin: 5px 0;
-   
+    color: var(--color-principal);
 }
-
 
 .product-word::before {
     content: 'Productos';
     font-weight: 600;
     font-size: 1em;
     font-family: "Raleway", sans-serif;
-    background-color: transparent;
     color: var(--color-principal);
 }
 
@@ -517,7 +463,6 @@ body, main, .section-more {
     font-weight: 600;
     font-size: 1em;
     font-family: "Raleway", sans-serif;
-    background-color: var(--color-oscuro);
     color: var(--color-principal);
 }
 
@@ -526,17 +471,17 @@ body, main, .section-more {
     font-weight: 600;
     font-size: 1em;
     font-family: "Raleway", sans-serif;
-    background-color: var(--color-oscuro);
     color: var(--color-principal);
 }
 
 .contact-word:hover:before,
 .home-word:hover:before,
 .product-word:hover::before {
-    color: #a60029;
+    color: var(--color-secundario);
 }
+/* FIN HEADER */
 
-
+/* BODY TABLETS */
 
 .text-products {
     background-color: var(--color-claro);
@@ -555,7 +500,7 @@ body, main, .section-more {
 }
 
 .section-contact {
-    
+
     width: 98%;
 }
 
@@ -574,11 +519,11 @@ body, main, .section-more {
     background-color: var(--color-principal);
 }
 footer {
-        
-     
+
+
     background-image: radial-gradient(circle, white, var(--color-principal));
     margin-bottom: 0px;
-    
+
 }
 
 footer img {
@@ -591,28 +536,35 @@ footer img {
     background-color: transparent;
 }
 
-
-/* FIN HEADER */
 }
 
 /* Estilos para pantallas de escritorio */
 
 /* Estilos específicos para dispositivos con un ancho mínimo de 992/1024px, es decir, pantallas de escritorio */
 @media screen and (min-width: 992px) {
+/* HEADER PARA PC */
 
+    .scrolled {
+        background-color: var(--color-secundario);
+        transition: background-color 0.5s ease; /* Transición suave */
+        }
 
-
-   .menu-position {
+    header{
+        width: 100%;
         position: fixed;
         top: 0;
+        z-index: 1000;
+        
     }
 
+    h1{
+        margin: 10px;
+    }
+    
     .list-menu {
         position: relative;
         top: 0;
     }
-    
-    /* contenido del HEADER */
 
     /* barra de navegacion para pc */
     .logo {
@@ -621,16 +573,16 @@ footer img {
         width: auto;
         position: relative;
         float: left;
-        z-index: 1000;
-        margin: 5px;
-        background-color: var(--color-principal);
+        z-index: 12;
+        margin: 0;
+        
     }
 
     .logo img {
-        
+
         height: 60px;
-        padding: 5px;
-        background-color: var(--color-principal);
+        padding: 0px;
+        background-color: transparent;
     }
 
     h1 {
@@ -638,134 +590,87 @@ footer img {
         font-size: 1.5rem;
         position: absolute;
         width: 300px;
-        margin: 20px 10px 10px 5px;
+        margin: 17px 5px;
         font-family: "Raleway", sans-serif;
-        background-color: var(--color-principal);
+        font-weight: 600;
+        background-color: transparent;
     }
 
-        
-    
-    
-    
-    /* banner */
-    .banner {
-        
-        width: 100%;
-       border: 0;
-        background-color: var(--color-principal);
-    }
 
-    .banner img {
-        border: 0;
-        position: relative;;
-    }
-    
-
-/* acceso a nosotros */
+/* acceso a item nosotros */
     .us-hidden {
         display: block;
-        
-        
-
     }
-    
+
     /* lista de menu */
     .nav-bar {
         position: fixed;
-        border: 2px solid transparent;
         z-index: 1000;
         float: right;
-        background-color: var(--color-secundario);
+        background-color: transparent;
         margin: 15px 50px;
         top: 0;
-        
     }
 
     .nav-bar li a {
-        
-        background-color: var(--color-oscuro);
+
+        background-color: transparent;
         color: var(--color-principal);
         text-transform: uppercase;
         font-weight: 600;
         font-size: 1em;
         font-family: "Raleway", sans-serif;
     }
-    
+
     .nav-bar li a:hover {
-        color: #a60029;
-        background-color: transparent;
+        color: var(--color-oscuro);
+        
     }
 
-    
-    
-  
-
-    
-    
-    
     .nav-bar li ul li {
-        background-color: var(--color-oscuro);
+        background-color: transparent;
         padding: 5px;
     }
-    
-
 
     .list-menu{
-        
+
         background-color: transparent;
         justify-content: space-around;
-        
-    
-        
-        
-        
     }
 
     .item-menu{
-        background-color: var(--color-oscuro);
+        background-color: transparent;
         padding: 0;
     }
-
-    
-
-    .product-word::before {
-        content: 'Productos';
-        font-weight: 600;
-        font-size: 1em;
-        font-family: "Raleway", sans-serif;
-    }
-
-    .home-word::before {
-        content: 'Home';
-        font-weight: 600;
-        font-size: 1em;
-        font-family: "Raleway", sans-serif;
-    }
-
-    .contact-word::before {
-        content: 'Contacto';
-        font-weight: 600;
-        font-size: 1em;
-        font-family: "Raleway", sans-serif;
-    }
-
-    .contact-word:hover::before,
-    .home-word:hover::before,
-    .product-word:hover::before {
-        color: #a60029;
-    }
-
 
     .menu-position {
         width: 500px;
         position: relative;
-        
+    }
+
+    .contact-word:hover:before,
+    .home-word:hover:before,
+    .product-word:hover::before {
+        color: var(--color-oscuro);
     }
 
     /* FIN HEADER */
+
+        /* banner */
+        .banner {
+
+            width: 100%;
+           border: 0;
+            background-color: var(--color-principal);
+        }
     
+        .banner img {
+            border: 0;
+            position: relative;;
+        }
+
     /* div para slogan */
-    
+
     .slogan{
         border: 1px solid transparent;
         width: 100%;
@@ -774,32 +679,32 @@ footer img {
         color: black;
         padding: 40px;
         background-image: radial-gradient(circle, var(--color-claro), var(--color-principal));
-        
+
     }
-    
+
     .slogan p {
         padding: 5px;
         font-size: 2em;
         background: none;
         text-align: center;
     }
-    
+
     /* fin slogan */
-    
+
     /* seccion PRODUCTOS */
-    
+
     .section-prods {
         height: auto;
         background-color: var(--color-claro);
         margin: 5px auto;
         padding: 5px;
         width: 95%;
-        
-    
+
+
     }
 
     .section-contact {
-    
+
         width: 95%;
     }
 
@@ -809,18 +714,18 @@ footer img {
         display: grid;
         grid-template-columns: auto auto auto;
     }
-    
 
-    
+
+
     .product {
         background-color: var(--color-claro);
         padding: 10px;
         margin: 10px auto;
         width: 100%;
 
-        
+
     }
-    
+
     .title-2 {
         color: var(--color-oscuro);
         text-align: center;
@@ -831,7 +736,7 @@ footer img {
         background-color: var(--color-principal);
 
     }
-    
+
     .img-products {
         margin: auto;
         padding: 10px;
@@ -849,14 +754,14 @@ footer img {
     height: 90%;
     padding: 50px;
     margin-top: 5px;
-    
-    
+
+
 }
 
 .centrar-contenido {
     text-align: center;
-    
-    
+
+
 }
 
 .text-justify{
@@ -874,10 +779,10 @@ footer img {
     background-color: var(--color-principal);
 }
 /* fin de estilo de nosotros */
-    
- 
 
-    
+
+
+
     /* seccion more */
     .section-more {
         display: grid;
@@ -886,7 +791,7 @@ footer img {
     }
 
     /* mapa para pc*/
-    
+
     .map-location {
         background-color: var(--color-claro);
         border: 1px solid transparent;
@@ -894,18 +799,18 @@ footer img {
         margin: 10px;
         padding: 10px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Aquí se define la sombra */
-    
+
     }
-    
+
     .text-desc {
         background-color: var(--color-claro);
         padding: 5px;
         margin: 5px;
     }
     /* fin mapa */
-    
+
     /* video para pc*/
-    
+
     .video-ref {
         background-color: var(--color-claro);
         height: auto;
@@ -914,10 +819,10 @@ footer img {
         padding: 10px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Aquí se define la sombra */
     }
-    
+
     /* footer para pc */
     footer {
-        
+
         height: 200px;
         width: 100%;
         margin: 0 auto;
@@ -927,7 +832,7 @@ footer img {
         padding: 10px;
         background-image: none;
         background-color: var(--color-principal);
-        ; 
+        ;
     }
 
     .img-footer {
