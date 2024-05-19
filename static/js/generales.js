@@ -13,3 +13,15 @@ const verScroll = function() {
 }
 
 window.addEventListener('scroll', verScroll )
+
+// onclick 
+
+document.getElementById('icon-home').onclick = function() {
+  document.getElementById('first-section').scrollIntoView({ behavior: 'smooth' });
+};
+document.getElementById('icon-menu').onclick = function() {
+  document.getElementById('section-prods').scrollIntoView({ behavior: 'smooth' });
+};
+document.getElementById('icon-contact').onclick = function() {
+  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+};
