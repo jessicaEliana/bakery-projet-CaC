@@ -41,6 +41,7 @@
     display: flex;
     position: sticky;
     bottom: 0px;
+    z-index: 11;
 }
 
 
@@ -143,6 +144,10 @@
     height: auto;
     padding: 40px;
     background-image: radial-gradient(circle, white, var(--color-principal));
+    position: absolute;
+    bottom: 0; /* Posición en la parte inferior del banner */
+    left: 0; /* Alineado al borde izquierdo */
+    z-index: 2; /* Asegurar que esté por encima del banner */
 }
 
 .slogan p {
@@ -660,7 +665,7 @@ footer img {
         .banner {
 
             width: 100%;
-           border: 0;
+            border: 0;
             background-color: var(--color-principal);
         }
     
