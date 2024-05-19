@@ -407,23 +407,23 @@ footer img {
     z-index: 11;
 }
 
-
-
 .nav-bar li ul li {
     background-color: var(--color-oscuro);
     font-weight: 600;
     padding: 5px;
 }
 
-.nav-bar li ul li a:hover {
-    color: var(--color-secundario);
-}
+/* .nav-bar li a {
+    
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1em;
+    font-family: "Raleway", sans-serif;
+    border: 1px solid palevioletred;
+} */
 
 .nav-bar li a:hover {
-    
-    color: var(--color-secundario);
-}
-
+    color: var(--color-secundario); 
 }
 
 .us-hidden {
@@ -434,7 +434,7 @@ footer img {
     font-weight: 600;
     font-size: 1em;
     font-family: "Raleway", sans-serif;
-    padding: 2px;
+    padding: 1px;
     margin: 0
 }
 
@@ -449,7 +449,6 @@ footer img {
 .item-menu a {
     color: var(--color-principal);
 }
-
 
 .product-word::before {
     content: 'Productos';
@@ -537,7 +536,7 @@ footer img {
     background-color: transparent;
 }
 
-
+}
 
 /* Estilos para pantallas de escritorio */
 
@@ -555,7 +554,7 @@ footer img {
         position: fixed;
         top: 0;
         z-index: 1000;
-        background-color: rgba(236, 143, 81, 0.511);
+        
     }
 
     h1{
@@ -627,9 +626,9 @@ footer img {
         color: var(--color-oscuro);
         
     }
-    
+
     .nav-bar li ul li {
-        background-color: rgba(236, 143, 81, 0.511);
+        background-color: transparent;
         padding: 5px;
     }
 
