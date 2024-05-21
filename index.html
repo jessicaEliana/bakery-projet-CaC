@@ -23,10 +23,88 @@
     <!-- logo y navegación -->
     <header>
         <!-- logo -->
-        <!-- <div class="logo">
+        <div class="logo">
             <img src="./static/img/Logo.png" alt="">
             <h1>Codo a Codo Bakery</h1>
-        </div> -->
+
+        </div>
+
+        <!-- barra de navegación -->
+        <!-- <div id="menu_navegacion " class="contenido-barra fixed"></div> -->
+        <nav class="nav-bar menu-position">
+
+            <!-- LISTA DESORDENADA DEL MENU -->
+            <ul class="list-menu">
+
+                <!-- ITEM PRODUCTOS -->
+                <li class="item-menu">
+                    <!-- ENLACE PRODUCTOS -->
+                    <a class="anchor-menu" href=""><i id="icon-menu" class="fa-solid fa-bars no-bg product-word"></i></a>
+                    <!-- LISTA DE PRODUCTOS -->
+                    <ul class="enlace">
+                        <!-- ITEM TORTAS -->
+                        <li class="enlace">
+                            <!-- ENLACE A TORTAS -->
+                            <a href="./Tortas.html">Tortas</a>
+                        </li>
+
+
+                        <!-- ITEM PASTELERIA -->
+                        <li>
+                            <!-- ENLACE A PASTELERRIA -->
+                            <a href="./Pasteleria.html">Pasteleria</a>
+                        </li>
+                            
+                        <!-- ITEM PANADERIA -->
+                        <li>
+                            <!-- ENLACE A PANADERIA  -->
+                            <a href="./Panaderia.html">Panaderia</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- ITEM INICO O HOME -->
+                <li class="item-menu">
+                    <!-- ENLACE HOME-->
+                    <a class="anchor-menu" href=""><i id="icon-home" class="fa-solid fa-house no-bg home-word"></i></a>
+                </li>
+
+                <!-- ITEM NOSOTROS -->
+                <li class="item-menu us-hidden">
+
+                    <!-- ENLACE NOSOTROS -->
+                    <a href="#us">Nosotros</a>
+
+                </li>
+
+                <!-- ITEM CONTACTO -->
+                <li class="item-menu">
+
+                    <!-- ENLACE CONTACTO-->
+                    <a class="anchor-menu" href="#contact"><i id="icon-contact" class="fa-solid fa-user no-bg contact-word"></i></a>
+
+                </li>
+            </ul>
+        </nav>
+
+        
+
+        </div>
+
+        <div class="menu-mobile">
+            <div id="menu">
+                <button id="btnProductos"><i id="icon-menu" class="fa-solid fa-bars no-bg product-word"></i></button>
+                <button onclick="window.location.href='#first-section'"><i id="icon-home" class="fa-solid fa-house no-bg home-word"></i></button>
+                <button onclick="window.location.href='#first-section'" class="us-hidden">Nosotros</button>
+                <button onclick="window.location.href='#contact'"><i id="icon-contact" class="fa-solid fa-user no-bg contact-word"></i></button>
+            </div>
+            <div id="submenu" class="submenu">
+                <a href="./Tortas.html">Tortas</a>
+                <a href="./Panaderia.html">Panadería</a>
+                <a href="./Pasteleria.html">Pastelería</a>
+            </div>
+        </div>
+
 
     </header>
 
