@@ -1,5 +1,4 @@
 
-
 const validarFormulario= (evento) => {
     evento.preventDefault()
     
@@ -10,6 +9,7 @@ const validarFormulario= (evento) => {
     
     let validation = true
     let firstInvalidElement = null;
+
     if (primerNombre.value === "") {    
         divErrorPrimerNombre.insertAdjacentText("afterbegin","Por favor, ingresa tu nombre.")
         validation = false
@@ -41,6 +41,28 @@ const validarFormulario= (evento) => {
         divErrorEmail.insertAdjacentText("afterbegin", "Por favor, ingresa un correo electrónico válido.");
         validation = false;
         if (!firstInvalidElement) firstInvalidElement = email;
+    }
+
+    // Validacion de localidad
+    const localidad = document.getElementById("localidad");
+    const divErrorLocalidad = document.querySelector("#error-localidad");
+    divErrorLocalidad.innerHTML = "";
+
+    if (localidad.value.trim() === "") {
+        divErrorLocalidad.insertAdjacentText("afterbegin", "Por favor, ingresa tu localidad.");
+        validation = false;
+        if (!firstInvalidElement) firstInvalidElement = localidad;
+    }
+
+    // Validacion de codigo postal
+    const codigoPostal = document.getElementById("zipcode");
+    const divErrorCodigoPostal = document.querySelector("#error-zipcode");
+    divErrorCodigoPostal.innerHTML = "";
+
+    if (codigoPostal.value.trim() === "") {
+        divErrorCodigoPostal.insertAdjacentText("afterbegin", "Por favor, ingresa tu código postal.");
+        validation = false;
+        if (!firstInvalidElement) firstInvalidElement = codigoPostal;
     }
 
     // Si hay un elemento no válido, desplazarse hacia él

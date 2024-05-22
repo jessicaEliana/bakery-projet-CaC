@@ -209,38 +209,29 @@
                     <div class="form-group">
                         <label for="firstname">Nombre: </label>
                         <input type="text" id="firstname" name="firstname" placeholder="Ingrese su nombre aquí...">
+                        <div id="error-firstname" class="error-message"></div>
                     </div>
-
                     <div class="mb-3">
                         <label for="lastname">Apellido: </label>
                         <input type="text" id="lastname" name="lastname" placeholder="Ingrese su apellido aquí...">
+                        <div id="error-lastname" class="error-message"></div>
                     </div>
-
                     <div class="mb-3">
                         <label for="email">Email: </label>
                         <input type="text" id="email" name="email" placeholder="Ingrese su email aquí...">
+                        <div id="error-email" class="error-message"></div>
                     </div>
-
                     <div class="mb-3">
                         <label for="localidad">Localidad: </label>
-                        <input type="text" id="localidad" name="city" value="Ingrese su localidad aqui...">
+                        <input type="text" id="localidad" name="city" placeholder="Ingrese su localidad aquí...">
+                        <div id="error-localidad" class="error-message"></div>
                     </div>
-
                     <div class="mb-3">
                         <label for="zipcode">Código Postal: </label>
-                        <input type="text" id="zipcode" name="zipcode" placeholder="Ingrese su código postal aquí..."> <br>
-                        <!-- <label for="birthdate">Fecha de Nacimiento: </label> -->
-                        <!-- <input type="date" id="birthdate" name="birthdate"> -->
+                        <input type="text" id="zipcode" name="zipcode" placeholder="Ingrese su código postal aquí...">
+                        <div id="error-zipcode" class="error-message"></div>
                     </div>
 
-                    <!-- <div class="clear">
-                        <label for="tipoProducto">Tipo de Producto:</label><br>
-                        <select class="boton-enviar" id="tipoProducto" name="tipoProducto" required onchange="updateProductos()">
-                            <option value="">Seleccione un tipo de producto</option>
-                            <option value="tortas">Tortas</option>
-                            <option value="postres">Postres</option>
-                            <option value="panaderia">Panadería</option>
-                        </select></div><br> -->
                     
                     <div class="clear">
                         <label for="producto">Producto:</label><br>
@@ -267,27 +258,10 @@
                         <label for="Consulta">Consulta: </label>
                         <textarea id="Consulta" name="Consulta" rows="4"></textarea> 
                     </div>
-<!--                    <label for="birthdate">Fecha de Nacimiento: </label> -->
-                        <!-- <input type="date" id="birthdate" name="birthdate"> -->
-                    <!-- <div class="mb-3">
-                        <p class="seccion-contacto">Género
-                            <input type="radio" name="gender" value="hombre" checked> Hombre
-                            <input type="radio" name="gender" value="mujer" checked> Mujer
-                            <input type="radio" name="gender" value="otro" checked> Otro
-                        </p>
-                    </div> -->
-                
-                    <!-- <div class="mb-3">
-                        <p class="seccion-contacto">Estudios:
-                            <input type="checkbox" name="estudio" value="primarios"> Primarios
-                            <input type="checkbox" name="estudio" value="secundarios"> Secundarios
-                            <input type="checkbox" name="estudio" value="terciarios"> Terciarios
-                            <input type="checkbox" name="estudio" value="universitarios"> Universitarios
-                            <input type="checkbox" name="estudio" value="otro"> Otro
-                        </p>
-                    </div> -->
 
                     <button type="submit" class="btn btn-primary">Enviar</button>
+
+                    
 
                 </fieldset>
             </form>

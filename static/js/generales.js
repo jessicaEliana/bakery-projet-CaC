@@ -100,7 +100,7 @@ function validarFormulario (){
     var codigoPostal = document.getElementById('zipcode').value;
 
 // Verifica si los campos estan vacios
-    if (firstname.trim() === '' || lastname.trim() === ''){
+    if (firstname.trim() === '' || lastname.trim() === '' || localidad.trim() === '' || codigoPostal.trim() === ''){
         alert('Debes completar todos los campos.');
         return false;
 }
