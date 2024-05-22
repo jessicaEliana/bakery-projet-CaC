@@ -141,13 +141,28 @@
         margin-bottom: 0px;
     }
 }
-@media screen and (min-width: 900px) {
+
+@media screen and (min-width: 768px) {
+
+    .contenedor-titulos-productos{
+        margin: 12vh auto 40px auto;
+        position: initial;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
 	.contenedor_grid_tortas{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         justify-items: center;
         align-items: center;
         grid-auto-flow: dense;
+    }
+
+    .contenedor-titulos-productos{
+        margin: 15vh auto 40px auto;
+
     }
 
     .contenedor-productos {

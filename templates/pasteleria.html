@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ruta relativa favicon -->
+    <link rel="shortcut icon" href="./static/img/favicon-16x16.png" type="image/x-icon">
+    <title>bakery Home</title>
+    <!-- fuentes de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- estilos de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- iconos fontawesome -->
+    <script src="https://kit.fontawesome.com/570f7e337c.js" crossorigin="anonymous"></script>
+    <!-- estilos del home -->
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <!-- estilos de productos -->
+    <link rel="stylesheet" href="../static/css/productos.css">
+
+    
+</head>
+<body>
+    <!-- logo y navegación -->
+    <header>
+        <!-- logo -->
+        <div class="logo">
+            <img src="./static/img/Logo.png" alt="">
+            <h1>Codo a Codo Bakery</h1>
+
+        </div>
+
+        <!-- barra de navegación -->
+        <!-- <div id="menu_navegacion " class="contenido-barra fixed"></div> -->
+        <nav class="nav-bar menu-position">
+
+            <!-- LISTA DESORDENADA DEL MENU -->
+            <ul class="list-menu">
+
+                <!-- ITEM PRODUCTOS -->
+                <li class="item-menu">
+                    <!-- ENLACE PRODUCTOS -->
+                    <a class="anchor-menu" href=""><i id="icon-menu-pc" class="fa-solid fa-bars no-bg product-word"></i></a>
+                    <!-- LISTA DE PRODUCTOS -->
+                    <ul class="enlace">
+                        <!-- ITEM TORTAS -->
+                        <li class="enlace">
+                            <!-- ENLACE A TORTAS -->
+                            <a href="./tortas.html">Tortas</a>
+                        </li>
+
+
+                        <!-- ITEM PASTELERIA -->
+                        <li>
+                            <!-- ENLACE A PASTELERRIA -->
+                            <a href="./pasteleria.html">Pasteleria</a>
+                        </li>
+                            
+                        <!-- ITEM PANADERIA -->
+                        <li>
+                            <!-- ENLACE A PANADERIA  -->
+                            <a href="./panaderia.html">Panaderia</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- ITEM INICO O HOME -->
+                <li class="item-menu">
+                    <!-- ENLACE HOME-->
+                    <a class="anchor-menu" href="../index.html"><i id="icon-home-pc" class="fa-solid fa-house no-bg home-word"></i></a>
+                </li>
+
+                <!-- ITEM NOSOTROS -->
+                <li class="item-menu us-hidden">
+
+                    <!-- ENLACE NOSOTROS -->
+                    <a href="../index.html#us">Nosotros</a>
+
+                </li>
+
+                <!-- ITEM CONTACTO -->
+                <li class="item-menu">
+
+                    <!-- ENLACE CONTACTO-->
+                    <a class="anchor-menu" href="../index.html#contact"><i id="icon-contact-pc" class="fa-solid fa-user no-bg contact-word"></i></a>
+
+                </li>
+            </ul>
+        </nav>
+
+        <div class="menu-mobile">
+            <div id="menu">
+                <button id="btnProductos"><i id="icon-menu" class="fa-solid fa-bars no-bg product-word"></i></button>
+                <button onclick="window.location.href='../index.html'"><i id="icon-home" class="fa-solid fa-house no-bg home-word"></i></button>
+                <button onclick="window.location.href='../index.html#us'" class="us-hidden">Nosotros</button>
+                <button onclick="window.location.href='../index.html#contact'"><i id="icon-contact" class="fa-solid fa-user no-bg contact-word"></i></button>
+            </div>
+            <div id="submenu" class="submenu">
+                <a href="./tortas.html">Tortas</a>
+                <a href="./panaderia.html">Panadería</a>
+                <a href="./pasteleria.html">Pastelería</a>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!-- contenido principal -->
+
+
+    <main>
+        <section>
+            <div class="contenedor-titulos-productos">
+                <h2 class="contenido-titulo-productos">PASTELERIA</h2>
+            </div>
+
+            <div class="contenedor-productos">
+                <div class="producto img-izq">
+                    <img src="../static/img/imagesproductos/Pasteleria/Galletitas.png" alt="Producto 1">
+                    <div class="info descripcion-pasteleria">
+                        <div class="nombre-producto">Galletitas</div>
+                        <div class="descripcion"></div>
+                    </div>
+                </div>
+                <div class="producto img-der">
+                    <div class="info txt-derecha descripcion-pasteleria">
+                        <div class="nombre-producto">Budines</div>
+                        <div class="descripcion"></div>
+                    </div>
+                    <img src="../static/img/imagesproductos/Pasteleria/Budines.png" alt="Producto 2">
+                </div>
+                <div class="producto img-izq">
+                    <img src="../static/img/imagesproductos/Pasteleria/Alfajores.png" alt="Producto 1">
+                    <div class="info descripcion-pasteleria">
+                        <div class="nombre-producto">Alfajores</div>
+                        <div class="descripcion"></div>
+                    </div>
+                </div>
+                <div class="producto img-der">
+                    <div class="info txt-derecha descripcion-pasteleria">
+                        <div class="nombre-producto">Masas secas <br>y finas</div>
+                        <div class="descripcion"></div>
+                    </div>
+                    <img src="../static/img/imagesproductos/Pasteleria/Masas.png" alt="Producto 2">
+                </div>
+                <div class="producto img-izq">
+                    <img src="../static/img/imagesproductos/Pasteleria/TartasDulces.png" alt="Producto 1">
+                    <div class="info descripcion-pasteleria">
+                        <div class="nombre-producto">Tartas dulces</div>
+                        <div class="descripcion"></div>
+                    </div>
+                </div>
+                <div class="producto img-der">
+                    <div class="info txt-derecha descripcion-pasteleria">
+                        <div class="nombre-producto">Brownies</div>
+                        <div class="descripcion"></div>
+                    </div>
+                    <img src="../static/img/imagesproductos/Pasteleria/Brownies.png" alt="Producto 2">
+                </div>
+                <!-- Agregar más productos aquí -->
+            </div>  
+        </section>
+    </main>
+
+    <footer class="">
+
+        <!-- redes -->
+        <a class="img-footer" href="https://github.com/jessicaEliana/bakery-projet-CaC"><img src="../static/img/icons8-github-48.png" alt="enlace al repositorio del proyecto" title="enlace al repositorio del proyecto"></a>
+        <a class="img-footer" href="#"><img src="../static/img/icons8-whatsapp-48.png" alt="enlace a whatsup"></a>
+        <a class="img-footer" href="#"><img src="../static/img/icons8-instagram-48.png" alt="enlace a instagram"></a>
+        <a class="img-footer" href="#"><img src="../static/img/icons8-youtube-48.png" alt="enlace a youtube"></a>
+    </footer>
+
+    <script src="../static/js/generales.js"></script>    
+</body>
+</html>
