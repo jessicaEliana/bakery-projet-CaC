@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +16,8 @@
     <script src="https://kit.fontawesome.com/570f7e337c.js" crossorigin="anonymous"></script>
     <!-- estilos del home -->
     <link rel="stylesheet" href="./static/css/styles.css">
+    <!-- estilos del form -->
+    <link rel="stylesheet" href="./static/css/form.css">
 
     
 </head>
@@ -24,41 +26,41 @@
     <header>
         <!-- logo -->
         <div class="logo">
-            <img src="./static/img/Logo.png" alt="">
-            <h1>Codo a Codo Bakery</h1>
-
+            <a href="index.html">
+                <img src="./static/img/Logo.png" alt="Logo">
+                <h1>Codo a Codo Bakery</h1>
+            </a>
         </div>
 
         <!-- barra de navegación -->
         <!-- <div id="menu_navegacion " class="contenido-barra fixed"></div> -->
         <nav class="nav-bar menu-position">
-
             <!-- LISTA DESORDENADA DEL MENU -->
             <ul class="list-menu">
 
                 <!-- ITEM PRODUCTOS -->
                 <li class="item-menu">
                     <!-- ENLACE PRODUCTOS -->
-                    <a class="anchor-menu" href=""><i id="icon-menu" class="fa-solid fa-bars no-bg product-word"></i></a>
+                    <a class="anchor-menu" href=""><i id="icon-menu-pc" class="fa-solid fa-bars no-bg product-word"></i></a>
                     <!-- LISTA DE PRODUCTOS -->
                     <ul class="enlace">
                         <!-- ITEM TORTAS -->
                         <li class="enlace">
                             <!-- ENLACE A TORTAS -->
-                            <a href="./Tortas.html">Tortas</a>
+                            <a href="./templates/tortas.html">Tortas</a>
                         </li>
 
 
                         <!-- ITEM PASTELERIA -->
                         <li>
                             <!-- ENLACE A PASTELERRIA -->
-                            <a href="./Pasteleria.html">Pasteleria</a>
+                            <a href="./templates/pasteleria.html">Pasteleria</a>
                         </li>
                             
                         <!-- ITEM PANADERIA -->
                         <li>
                             <!-- ENLACE A PANADERIA  -->
-                            <a href="./Panaderia.html">Panaderia</a>
+                            <a href="./templates/panaderia.html">Panaderia</a>
                         </li>
                     </ul>
                 </li>
@@ -66,14 +68,14 @@
                 <!-- ITEM INICO O HOME -->
                 <li class="item-menu">
                     <!-- ENLACE HOME-->
-                    <a class="anchor-menu" href=""><i id="icon-home" class="fa-solid fa-house no-bg home-word"></i></a>
+                    <a class="anchor-menu" href=""><i id="icon-home-pc" class="fa-solid fa-house no-bg home-word"></i></a>
                 </li>
 
                 <!-- ITEM NOSOTROS -->
                 <li class="item-menu us-hidden">
 
                     <!-- ENLACE NOSOTROS -->
-                    <a href="#us">Nosotros</a>
+                    <a href="index.html#us">Nosotros</a>
 
                 </li>
 
@@ -81,7 +83,7 @@
                 <li class="item-menu">
 
                     <!-- ENLACE CONTACTO-->
-                    <a class="anchor-menu" href="#contact"><i id="icon-contact" class="fa-solid fa-user no-bg contact-word"></i></a>
+                    <a class="anchor-menu" href="index.html#contact"><i id="icon-contact-pc" class="fa-solid fa-user no-bg contact-word"></i></a>
 
                 </li>
             </ul>
@@ -89,18 +91,18 @@
 
         
 
-        </div>
+        
 
         <div class="menu-mobile">
             <div id="menu">
                 <button id="btnProductos"><i id="icon-menu" class="fa-solid fa-bars no-bg product-word"></i></button>
-                <button onclick="window.location.href='#first-section'"><i id="icon-home" class="fa-solid fa-house no-bg home-word"></i></button>
-                <button onclick="window.location.href='#first-section'" class="us-hidden">Nosotros</button>
-                <button onclick="window.location.href='#contact'"><i id="icon-contact" class="fa-solid fa-user no-bg contact-word"></i></button>
+                <button onclick="window.location.href='index.html#first-section'"><i id="icon-home" class="fa-solid fa-house no-bg home-word"></i></button>
+                <button onclick="window.location.href='index.html#us'" class="us-hidden">Nosotros</button>
+                <button onclick="window.location.href='index.html#contact'"><i id="icon-contact" class="fa-solid fa-user no-bg contact-word"></i></button>
             </div>
             <div id="submenu" class="submenu">
-                <a href="./Tortas.html">Tortas</a>
-                <a href="./Panaderia.html">Panadería</a>
+                <a href="./templates/tortas.html">Tortas</a>
+                <a href="./templates/panaderia.html">Panadería</a>
                 <a href="./templates/pasteleria.html">Pastelería</a>
             </div>
         </div>
@@ -135,9 +137,9 @@
                 <div class="product cakes grid-item">
                     <h2 class="title-2">TORTAS</h2>
                     <div class="img-products">
-                        <img src="./static/img/assortment-pieces-cake.jpg" alt="">
+                        <a href="./templates/tortas.html"><img src="./static/img/assortment-pieces-cake.jpg" alt=""></a>
                     </div>
-                    <p class="text-products">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellendus sit quasi autem architecto enim voluptatem quidem soluta, optio harum natus! Repudiandae sapiente molestiae ipsa nulla similique soluta praesentium laboriosam.
+                    <p class="text-products">Tortas irresistibles para toda ocasión, con sabores desde el clásico chocolate hasta sofisticado red velvet, hechas con los mejores ingredientes.
 
                     </p>
 
@@ -148,10 +150,10 @@
                     <h2 class="title-2">PASTELERÍA</h2>
 
                     <div class="img-products">
-                        <img src="./static/img/mini-cheese.png" alt="">
+                        <a href="./templates/pasteleria.html"><img src="./static/img/mini-cheese.png" alt=""></a>
                     </div>
 
-                    <p class="text-products">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellendus sit quasi autem architecto enim voluptatem quidem soluta, optio harum natus! Repudiandae sapiente molestiae ipsa nulla similique soluta praesentium laboriosam.</p>
+                    <p class="text-products">Exquisita selección de pasteles, tartas y cupcakes, hechos a mano con atención al detalle y sabores únicos, perfectos para cualquier evento o antojo.</p>
 
                 </div>
 
@@ -160,10 +162,10 @@
                     <h2 class="title-2">PANADERÍA</h2>
 
                     <div class="img-products">
-                        <img src="./static/img/galletas1.jpg" alt="">
+                        <a href="./templates/panaderia.html"><img src="./static/img/galletas1.jpg" alt=""></a>
                     </div>
 
-                    <p class="text-products">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellendus sit quasi autem architecto enim voluptatem quidem soluta, optio harum natus! Repudiandae sapiente molestiae ipsa nulla similique soluta praesentium laboriosam.</p>
+                    <p class="text-products">Panes artesanales frescos cada día, desde crujientes baguettes hasta suaves integrales, hechos con técnicas tradicionales y ingredientes de calidad.</p>
 
                 </diV>
             </diV>
@@ -171,89 +173,126 @@
 
             
 
-                <!-- Ejemplo con nosotros en el home -->
-                <div id="us" class="all-products">
-                    <!-- contenedor centrar-contenido -->
-    
-                        <!-- NOSOTROS -->
-                        <div class="text-justify item-us">
-                        <h2>NOSOTROS</h2><br>
-                        
-                        <p>Presentación: Codo a Codo Bakery</p>
-                        <p>Introducción</p><br>
-                        <p>¡Bienvenidos a Codo a Codo Bakery! Somos un lugar donde la pasión por la repostería se une con la creatividad y el sabor. Nuestro objetivo es endulzar tus días con deliciosos postres y panes frescos. ¡Vamos a conocer más sobre nosotros!
-                        </p>
-                        <p>Nuestra Historia</p><br>
-                        <p>Fundado en 2020, Codo a Codo Bakery nació de la pasión de cuatro amigos por el arte de hornear y codear.
-                        Inspirados por la tradición y la innovación, creamos recetas únicas que fusionan lo clásico con lo contemporáneo.
-                        Desde entonces, hemos estado sirviendo a nuestra comunidad con amor y dedicación. </p>
-                        </div>
-                    </div>
+            <!-- Ejemplo con nosotros en el home -->
+            <div id="us" class="all-products">
+                <!-- contenedor centrar-contenido -->
 
-            </diV>
+                    <!-- NOSOTROS -->
+                    <div class="text-justify item-us">
+                    <h2>NOSOTROS</h2><br>
+                    
+                    <p>Presentación: Codo a Codo Bakery</p>
+                    <p>Introducción</p><br>
+                    <p>¡Bienvenidos a Codo a Codo Bakery! Somos un lugar donde la pasión por la repostería se une con la creatividad y el sabor. Nuestro objetivo es endulzar tus días con deliciosos postres y panes frescos. ¡Vamos a conocer más sobre nosotros!
+                    </p>
+                    <p>Nuestra Historia</p><br>
+                    <p>Fundado en 2020, Codo a Codo Bakery nació de la pasión de cuatro amigos por el arte de hornear y codear.
+                    Inspirados por la tradición y la innovación, creamos recetas únicas que fusionan lo clásico con lo contemporáneo.
+                    Desde entonces, hemos estado sirviendo a nuestra comunidad con amor y dedicación. </p>
+                    </div>
+            </div>
+
+
             
         </section>
 
         <!-- section Contacto -->
         <section id="contact" class="section-contact">
-            <div class="contenedor container">
-                
-                <h2 class="seccion-contacto">CONTACTO</h2><br>
 
-                <!-- modelo de formulario -->
-                <form action="/submit_pedido" method="post">
-                    <fieldset>
-                        <legend>Formulario</legend>
-                        <div class="form-group">
-                            <label for="firstname">Nombre: </label>
-                            <input type="text" id="firstname" name="firstname" placeholder="Ingrese su nombre aquí...">
-                        </div>
-    
-                        <div class="mb-3">
-                            <label for="lastname">Apellido: </label>
-                            <input type="text" id="lastname" name="lastname" placeholder="Ingrese su apellido aquí...">
-                        </div>
-    
-                        <div class="mb-3">
-                            <label for="address">Dirección: </label>
-                            <input type="text" id="address" name="address" placeholder="Ingrese su dirección aquí...">
-                        </div>
+            <div class="consulta">
+                <h2>Formulario de Pedido o Consulta</h2>
 
-                        <div class="mb-3">
-                            <label for="city">Ciudad: </label>
-                            <input type="text" id="city" name="city" value="C.A.B.A.">
-                        </div>
-    
-                        <div class="mb-3">
-                            <label for="zipcode">Código Postal: </label>
-                            <input type="text" id="zipcode" name="zipcode" placeholder="Ingrese su código postal aquí..."> <br>
-                            <label for="birthdate">Fecha de Nacimiento: </label>
-                            <input type="date" id="birthdate" name="birthdate">
-                        </div>
+            <!-- modelo de formulario -->
+            <form action="current_page.php" method="get" id="form" onsubmit="return validarFormulario()">
+                <fieldset>
+                    <legend>Datos para tu pedido</legend>
+                    <div class="form-group">
+                        <label for="firstname">Nombre: </label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Ingrese su nombre aquí...">
+                    </div>
 
-                        <div class="mb-3">
-                            <p class="seccion-contacto">Género
-                                <input type="radio" name="gender" value="hombre" checked> Hombre
-                                <input type="radio" name="gender" value="mujer" checked> Mujer
-                                <input type="radio" name="gender" value="otro" checked> Otro
-                            </p>
-                        </div>
+                    <div class="mb-3">
+                        <label for="lastname">Apellido: </label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Ingrese su apellido aquí...">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email">Email: </label>
+                        <input type="text" id="email" name="email" placeholder="Ingrese su email aquí...">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="localidad">Localidad: </label>
+                        <input type="text" id="localidad" name="city" value="Ingrese su localidad aqui...">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="zipcode">Código Postal: </label>
+                        <input type="text" id="zipcode" name="zipcode" placeholder="Ingrese su código postal aquí..."> <br>
+                        <!-- <label for="birthdate">Fecha de Nacimiento: </label> -->
+                        <!-- <input type="date" id="birthdate" name="birthdate"> -->
+                    </div>
+
+                    <!-- <div class="clear">
+                        <label for="tipoProducto">Tipo de Producto:</label><br>
+                        <select class="boton-enviar" id="tipoProducto" name="tipoProducto" required onchange="updateProductos()">
+                            <option value="">Seleccione un tipo de producto</option>
+                            <option value="tortas">Tortas</option>
+                            <option value="postres">Postres</option>
+                            <option value="panaderia">Panadería</option>
+                        </select></div><br> -->
                     
-                        <div class="mb-3">
-                            <p class="seccion-contacto">Estudios:
-                                <input type="checkbox" name="estudio" value="primarios"> Primarios
-                                <input type="checkbox" name="estudio" value="secundarios"> Secundarios
-                                <input type="checkbox" name="estudio" value="terciarios"> Terciarios
-                                <input type="checkbox" name="estudio" value="universitarios"> Universitarios
-                                <input type="checkbox" name="estudio" value="otro"> Otro
-                            </p>
-                        </div>
-    
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-    
-                    </fieldset>
-                </form>
-                <!-- fin del formulario -->
+                    <div class="clear">
+                        <label for="producto">Producto:</label><br>
+                        <select class="boton-enviar" id="producto" name="producto" required>
+                            <option value="">Seleccione un producto</option>
+                            <option value="">----Tortas-----</option>
+                            <option value="lemonpae">Lemon Pae</option>
+                            <option value="carrotcake">Carrot Cake</option>
+                            <option value="selvanegra">Selva Negra</option>
+                            <option value="keylimepie">Key Lime Pie</option>
+                            <option value="">----Pasteleria-----</option>
+                            <option value="galletitas">Galletitas</option>
+                            <option value="budin">Budin</option>
+                            <option value="alfajores">Alfajores</option>
+                            <option value="masas">Masas secas/fina</option>
+                            <option value="">----Panaderia-----</option>
+                            <option value="panes">Panes</option>
+                            <option value="facturas">Facturas</option>
+                            <option value="medialunas">Medialunas</option>
+
+                        </select></div><br>
+
+                    <div class="mb-3 textarea-form" >
+                        <label for="Consulta">Consulta: </label>
+                        <textarea id="Consulta" name="Consulta" rows="4"></textarea> 
+                    </div>
+<!--                    <label for="birthdate">Fecha de Nacimiento: </label> -->
+                        <!-- <input type="date" id="birthdate" name="birthdate"> -->
+                    <!-- <div class="mb-3">
+                        <p class="seccion-contacto">Género
+                            <input type="radio" name="gender" value="hombre" checked> Hombre
+                            <input type="radio" name="gender" value="mujer" checked> Mujer
+                            <input type="radio" name="gender" value="otro" checked> Otro
+                        </p>
+                    </div> -->
+                
+                    <!-- <div class="mb-3">
+                        <p class="seccion-contacto">Estudios:
+                            <input type="checkbox" name="estudio" value="primarios"> Primarios
+                            <input type="checkbox" name="estudio" value="secundarios"> Secundarios
+                            <input type="checkbox" name="estudio" value="terciarios"> Terciarios
+                            <input type="checkbox" name="estudio" value="universitarios"> Universitarios
+                            <input type="checkbox" name="estudio" value="otro"> Otro
+                        </p>
+                    </div> -->
+
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+
+                </fieldset>
+            </form>
+            <!-- fin del formulario -->
+
             </div>
         </section>
 
@@ -261,14 +300,14 @@
         <section class="section-more">
         <!-- donde estamos -->
             <div class="map-location">
-                <p class="text-desc">-- iframe mapa --</p>
-                <iframe class="iframe-cont" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6726983.846388018!2d-58.3843478!3d-34.5874666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa546f3c19d%3A0x9d528d1f08195c58!2sAtelier%20Pastry%20-%20Patisserie!5e0!3m2!1ses-419!2sar!4v1713633313182!5m2!1ses-419!2sar" width="350px" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="text-desc">¿Donde estamos?</p>
+                <iframe class="iframe-cont" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6726983.846388018!2d-58.3843478!3d-34.5874666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa546f3c19d%3A0x9d528d1f08195c58!2sAtelier%20Pastry%20-%20Patisserie!5e0!3m2!1ses-419!2sar!4v1713633313182!5m2!1ses-419!2sar" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
             <!-- lo que hacemos -->
             <div class="video-ref">
-                <p class="text-desc">-- iframe video --</p>
-                <iframe class="iframe-cont"  width="600" height="450" src="https://www.youtube.com/embed/JkrYkFxL29A" title="CHEESECAKE CLÁSICO | La receta del clásico NEW YORK Cheesecake - CUKit!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="text-desc">Lo que hacemos</p>
+                <iframe class="iframe-cont"  width="600" height="450" src="https://www.youtube.com/embed/JkrYkFxL29A" title="CHEESECAKE CLÁSICO | La receta del clásico NEW YORK Cheesecake - CUKit!" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
                 <!-- boton de contacto -->
@@ -292,6 +331,7 @@
         <a class="img-footer" href="#"><img src="./static/img/icons8-youtube-48.png" alt="enlace a youtube"></a>
     </footer>
 
-    <script src="./static/js/generales.js"></script>    
+    <script src="./static/js/generales.js"></script>
+    <script src="./static/js/validaciones.js"></script>
 </body>
 </html>
