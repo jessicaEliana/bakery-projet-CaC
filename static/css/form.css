@@ -56,3 +56,8 @@
     width: 100%; /* El textarea ocupará el 100% del ancho del contenedor */
     box-sizing: border-box; /* Incluir padding y border en el ancho total */
 }
+
+.error-message{
+    color: red;
+    margin-bottom: 5px;
+}

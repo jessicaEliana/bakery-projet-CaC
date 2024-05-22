@@ -203,7 +203,7 @@
                 <h2>Formulario de Pedido o Consulta</h2>
 
             <!-- modelo de formulario -->
-            <form action="current_page.php" method="get" id="form" onsubmit="return validarFormulario()">
+            <form id="formRegister" novalidate action="#">
                 <fieldset>
                     <legend>Datos para tu pedido</legend>
                     <div class="form-group">
@@ -234,8 +234,19 @@
 
                     
                     <div class="clear">
-                        <label for="producto">Producto:</label><br>
-                        <select class="boton-enviar" id="producto" name="producto" required>
+                        <label>Tipo de producto:</label>
+                        <select id="tipoProducto" required onchange="updateProductos()">
+                            <option value="">Seleccione un tipo de producto</option>
+                            <option value="tortas">Tortas</option>
+                            <option value="postres">Postres</option>
+                            <option value="panaderia">Panadería</option>
+                        </select>
+                        <div id="error-tipoProducto" class="error"></div>
+
+
+
+                        <label>Producto:</label><br>
+                        <select id="producto" required>
                             <option value="">Seleccione un producto</option>
                             <option value="">----Tortas-----</option>
                             <option value="lemonpae">Lemon Pae</option>
@@ -251,13 +262,17 @@
                             <option value="panes">Panes</option>
                             <option value="facturas">Facturas</option>
                             <option value="medialunas">Medialunas</option>
+                        </select>
+                        <div id="error-producto" class="error"></div>
 
-                        </select></div><br>
+
+                    </div>
 
                     <div class="mb-3 textarea-form" >
                         <label for="Consulta">Consulta: </label>
                         <textarea id="Consulta" name="Consulta" rows="4"></textarea> 
                     </div>
+                    <div class="msj-right"></div>
 
                     <button type="submit" class="btn btn-primary">Enviar</button>
 

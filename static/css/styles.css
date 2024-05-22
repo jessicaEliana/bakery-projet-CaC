@@ -107,6 +107,7 @@
     justify-content: space-around;
     padding: 10px 0;
     height: 60px;
+    z-index: 9999;
 }
 
 #menu button {
@@ -247,7 +248,7 @@ select {
 fieldset, legend, label, input, p,
 .form-group, .mb-3 {
     background-color: var(--color-claro);
-    width: 95%;
+    width: 100%;
 }
 
 
