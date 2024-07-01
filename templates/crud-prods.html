@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Película</title>
+    <link rel="stylesheet" href="../static/css/crud-prods.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agregar Nuevo Producto</h1> <a href="../index.html">CaC - Bakery</a>
+        <!-- 
+        enctype="multipart/form-data": Este atributo es esencial cuando el formulario incluye un 
+        campo de subida de archivos (<input type="file">). 
+        Permite que los archivos se envíen al servidor como datos binarios en lugar de solo texto.
+        -->
+        <form id="productForm" enctype="multipart/form-data">
+            <label for="nombre_prod">Nombre</label>
+            <input type="text" id="nombre_prod" name="nombre_prod" required value="Torta">
+
+            <label for="precio_prod">Precio</label>
+            <input type="number" id="precio_prod" name="precio_prod" required value="1500">
+
+            <label for="stock_prod">Stock</label>
+            <input type="number" id="stock_prod" name="stock_prod" value="0">
+
+            <label for="descripcion_p">Descripción del Producto: </label>
+            <textarea name="descripcion_p" id="descripcion_p" cols="30" rows="10"></textarea>
+
+            <label for="imagenProd">Imagen de producto:</label> 
+            <input type="file" id="imagenProd" name="imagen">
+
+            <button type="submit" id="btnsave">Agregar Producto</button>
+            <button type="button" id="cancelEdit">Cancelar</button>
+        </form>
+        <div id="message"></div>
+        <h2>Listado de Productos</h2>
+        <ul id="productList"></ul>
+    </div>
+    <script type="module" src="../static/js/crud-prods.js"></script>
+</body>
+</html>
