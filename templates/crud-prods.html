@@ -15,6 +15,7 @@
         Permite que los archivos se envíen al servidor como datos binarios en lugar de solo texto.
         -->
         <form id="productForm" enctype="multipart/form-data">
+            <input type="hidden" id="productId" name="productId"> <!-- Campo oculto para almacenar el ID de la película -->
             <label for="nombre_prod">Nombre</label>
             <input type="text" id="nombre_prod" name="nombre_prod" required value="Torta">
 
