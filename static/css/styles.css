@@ -380,12 +380,43 @@ fieldset, legend, label, input, p,
 
 }
 
-
-
-
-
-
 footer {
+    background-color: var(--color-oscuro);
+    margin-bottom: 0px;
+    color: var(--color-claro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 10px;
+}
+
+.cont-left li {
+    color: var(--color-claro);
+    list-style: none;
+}
+
+.cont-left h6 {
+    color: var(--color-claro);
+}
+
+.cont-right {
+    display: flex;
+    gap: 10px; /* Ajusta el espacio entre los iconos según tus necesidades */
+}
+
+.img-footer img {
+    width: 48px; /* Asegúrate de que los iconos tengan un tamaño adecuado */
+    height: 48px;
+}
+
+
+
+
+
+
+/* footer {
     height: auto;
     display: flex;
     justify-content: flex-end;
@@ -394,9 +425,6 @@ footer {
     margin-bottom: 20px;
     background-image: radial-gradient(circle, var(--color-principal));
     background-color: var(--color-oscuro);
-
-
-
 }
 
 footer img {
@@ -411,7 +439,7 @@ footer img {
     background: transparent;
     margin: 10px 5px;
 
-}
+} */
 
 /* puntos de quiebre */
 /* Estilos generales */
@@ -625,25 +653,65 @@ footer img {
 .item-us > p, h2 {
     background-color: var(--color-principal);
 }
+
 footer {
-
-
     background-image: radial-gradient(circle, white, var(--color-principal));
-    margin-bottom: 0px;
+    color: var(--color-oscuro);
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    margin: 0;
+    padding: 10px;
+}
+
+.cont-left{
+    margin-bottom: 0;
+}
+
+.cont-left h6, .cont-left li {
+    color: var(--color-oscuro);
 
 }
+
+.cont-right {
+    margin-bottom: 0;
+    display: flex;
+    gap: 10px; /* Ajusta el espacio entre los iconos aquí necesitas */
+    
+}
+/* footer {
+    background-image: radial-gradient(circle, white, var(--color-principal));
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont-left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.cont-left li {
+    list-style: none;
+}
+
+.cont-right {
+    display: flex;
+    gap: 10px; /* Ajusta el espacio entre los iconos según tus necesidades */
+} */
 
 footer img {
     background-color: transparent;
-    margin: auto;
+    margin: 0;
 }
 
 .img-footer{
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     background-color: transparent;
 }
 
-}
+
 
 /* Estilos para pantallas de escritorio */
 
@@ -943,16 +1011,30 @@ footer img {
     /* footer para pc */
     footer {
 
-        height: 200px;
+        height: auto;
         width: 100%;
         margin: 0 auto;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: flex-end;
         padding: 10px;
         background-image: none;
         background-color: var(--color-principal);
         ;
+    }
+
+    .cont-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cont-left li {
+        list-style: none;
+    }
+    
+    .cont-right {
+        display: flex;
+        gap: 10px; /* Ajusta el espacio entre los iconos según tus necesidades */
     }
 
     .img-footer {
